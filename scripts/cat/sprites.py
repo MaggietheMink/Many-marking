@@ -117,7 +117,8 @@ class Sprites():
             'maskedcolours', 
             'shadersnewwhite', 'lineartdead', 'tortiepatchesmasks', 
             'medcatherbs', 'lineartdf', 'lightingnew', 'fademask',
-            'fadestarclan', 'fadedarkforest'
+            'fadestarclan', 'fadedarkforest',
+            'cheetahcolours', 'bobcatcolours', 'royalcolours', 'lynxcolours', 'ocelotcolours', 'manedwolfcolours'
 
         ]:
             if 'lineart' in x and game.config['fun']['april_fools']:
@@ -284,6 +285,48 @@ class Sprites():
             self.make_group('maskedcolours', (a, 1), f'masked{i}')
         for a, i in enumerate(['LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN', 'CHOCOLATE']):
             self.make_group('maskedcolours', (a, 2), f'masked{i}')
+        # cheetah
+        for a, i in enumerate(['WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK']):
+            self.make_group('cheetahcolours', (a, 0), f'cheetah{i}')
+        for a, i in enumerate(['CREAM', 'PALEGINGER', 'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA']):
+            self.make_group('cheetahcolours', (a, 1), f'cheetah{i}')
+        for a, i in enumerate(['LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN', 'CHOCOLATE']):
+            self.make_group('cheetahcolours', (a, 2), f'cheetah{i}')
+        # bobcat
+        for a, i in enumerate(['WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK']):
+            self.make_group('bobcatcolours', (a, 0), f'bobcat{i}')
+        for a, i in enumerate(['CREAM', 'PALEGINGER', 'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA']):
+            self.make_group('bobcatcolours', (a, 1), f'bobcat{i}')
+        for a, i in enumerate(['LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN', 'CHOCOLATE']):
+            self.make_group('bobcatcolours', (a, 2), f'bobcat{i}')
+        # royal
+        for a, i in enumerate(['WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK']):
+            self.make_group('royalcolours', (a, 0), f'royal{i}')
+        for a, i in enumerate(['CREAM', 'PALEGINGER', 'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA']):
+            self.make_group('royalcolours', (a, 1), f'royal{i}')
+        for a, i in enumerate(['LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN', 'CHOCOLATE']):
+            self.make_group('royalcolours', (a, 2), f'royal{i}')
+        # lynx
+        for a, i in enumerate(['WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK']):
+            self.make_group('lynxcolours', (a, 0), f'lynx{i}')
+        for a, i in enumerate(['CREAM', 'PALEGINGER', 'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA']):
+            self.make_group('lynxcolours', (a, 1), f'lynx{i}')
+        for a, i in enumerate(['LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN', 'CHOCOLATE']):
+            self.make_group('lynxcolours', (a, 2), f'lynx{i}')
+        # ocelot
+        for a, i in enumerate(['WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK']):
+            self.make_group('ocelotcolours', (a, 0), f'ocelot{i}')
+        for a, i in enumerate(['CREAM', 'PALEGINGER', 'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA']):
+            self.make_group('ocelotcolours', (a, 1), f'ocelot{i}')
+        for a, i in enumerate(['LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN', 'CHOCOLATE']):
+            self.make_group('ocelotcolours', (a, 2), f'ocelot{i}')
+        # maned wolf
+        for a, i in enumerate(['WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK']):
+            self.make_group('manedwolfcolours', (a, 0), f'maned{i}')
+        for a, i in enumerate(['CREAM', 'PALEGINGER', 'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA']):
+            self.make_group('manedwolfcolours', (a, 1), f'maned{i}')
+        for a, i in enumerate(['LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN', 'CHOCOLATE']):
+            self.make_group('manedwolfcolours', (a, 2), f'maned{i}')
             
         # new new torties
         for a, i in enumerate(['ONE', 'TWO', 'THREE', 'FOUR', 'REDTAIL', 'DELILAH', 'HALF', 'STREAK', 'MASK', 'SMOKE']):
